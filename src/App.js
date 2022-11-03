@@ -1,17 +1,25 @@
 import './App.css';
 import React from "react";
-import edit from './assets/images/edit.svg';
-import close from './assets/images/close.svg';
-import confirm from './assets/images/confirm.svg';
 import { v4 as uuidv4} from 'uuid';
+import Task from "./components/task/task";
 
 function App() {
   const [value, setValue] = React.useState('')
   const [tasks, setTasks] = React.useState([])
   const onAddTask = (value) => {
-    const newTask = {id: uuidv4(), text: value}
+    const newTask = {id: uuidv4(), text: value, isCompleted: false}
     setTasks([...tasks, newTask])
     setValue('')
+  }
+  const onDeleteTask = (task) => {
+    const newTasks = [...tasks.filter((e) => e.id !== task.id)]
+    setTasks(newTasks);
+  }
+  const setCompleted = (id) => {
+    setTasks(tasks.map((todo) => {
+      if (todo.id === id) return {...todo, isCompleted: !todo.isCompleted}
+      else return todo;
+    }))
   }
   return (
     <div className='todo'>
@@ -26,14 +34,7 @@ function App() {
             <h2 className='tasks__title'>Tasks:</h2>
             <ul className='tasks__list'>
               {tasks.map((task, index) => {
-                return <li className='task'>
-                  <div className='task__text'>{index + 1}. {task.text}</div>
-                  <div className='tasks__images'>
-                    <img className='task__close-svg' src={close} alt="#"/>
-                    <img className='task__edit-svg' src={edit} alt="#"/>
-                    <img className='task__confirm-svg' src={confirm} alt="#"/>
-                  </div>
-                </li>
+                return <Task setCompleted={setCompleted} task={task} index={index} key={index} onDeleteTask={onDeleteTask}/>
               })}
             </ul>
           </div>
