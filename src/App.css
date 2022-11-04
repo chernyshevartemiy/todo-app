@@ -50,7 +50,6 @@
 }
 
 .tasks__title {
-
   display: block;
   font-size: 20px;
   text-decoration: underline;
@@ -64,7 +63,7 @@
   justify-content: space-between;
   border: 4px green solid;
   min-height: 40px;
-  width: 600px;
+  width: 620px;
   padding: 10px;
   margin: 5px;
 }
@@ -157,3 +156,193 @@
   }
 }
 
+@media only screen and (min-width: 350px) {
+  .todo__title {
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+  .main__input {
+    width: 200px;
+  }
+  .main__button {
+    font-size: 10px;
+    width: 70px;
+  }
+  .tasks__title {
+    text-align: center;
+  }
+  .tasks__uncompleted {
+    display: flex;
+    justify-content: space-between;
+    border: 4px gold solid;
+    min-height: 40px;
+    width: 280px;
+    padding: 10px;
+    margin: 5px;
+  }
+  .tasks__completed {
+    display: flex;
+    justify-content: space-between;
+    border: 4px green solid;
+    min-height: 40px;
+    width: 300px;
+    padding: 10px;
+    margin: 5px;
+  }
+  .tasks__images {
+    width: 70px;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .todo__title {
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+  .main__input {
+    width: 240px;
+  }
+  .main__button {
+    font-size: 12px;
+    width: 80px;
+  }
+  .tasks__title {
+    text-align: center;
+  }
+  .tasks__uncompleted {
+    display: flex;
+    justify-content: space-between;
+    border: 4px gold solid;
+    min-height: 40px;
+    width: 340px;
+    padding: 10px;
+    margin: 5px;
+  }
+  .tasks__completed {
+    display: flex;
+    justify-content: space-between;
+    border: 4px green solid;
+    min-height: 40px;
+    width: 360px;
+    padding: 10px;
+    margin: 5px;
+  }
+  .tasks__images {
+    width: 70px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .todo__title {
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+  .main__input {
+    width: 280px;
+  }
+  .main__button {
+    font-size: 12px;
+    width: 80px;
+  }
+  .tasks__title {
+    text-align: center;
+  }
+  .tasks__uncompleted {
+    display: flex;
+    justify-content: space-between;
+    border: 4px gold solid;
+    min-height: 40px;
+    width: 420px;
+    padding: 10px;
+    margin: 5px;
+  }
+  .tasks__completed {
+    display: flex;
+    justify-content: space-between;
+    border: 4px green solid;
+    min-height: 40px;
+    width: 440px;
+    padding: 10px;
+    margin: 5px;
+  }
+  .tasks__images {
+    width: 70px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .todo__title {
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+  .main__input {
+    width: 280px;
+  }
+  .main__button {
+    font-size: 12px;
+    width: 80px;
+  }
+  .tasks__title {
+    text-align: center;
+  }
+  .tasks__uncompleted {
+    display: flex;
+    justify-content: space-between;
+    border: 4px gold solid;
+    min-height: 40px;
+    width: 500px;
+    padding: 10px;
+    margin: 5px;
+  }
+  .tasks__completed {
+    display: flex;
+    justify-content: space-between;
+    border: 4px green solid;
+    min-height: 40px;
+    width: 520px;
+    padding: 10px;
+    margin: 5px;
+  }
+  .tasks__images {
+    width: 70px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .todo__title {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  .main__input {
+    width: 300px;
+  }
+  .main__button {
+    font-size: 12px;
+    width: 80px;
+  }
+  .tasks__title {
+    text-align: center;
+    font-size: 24px;
+  }
+  .tasks__uncompleted {
+    display: flex;
+    justify-content: space-between;
+    border: 4px gold solid;
+    min-height: 40px;
+    width: 600px;
+    padding: 10px;
+    margin: 5px;
+  }
+  .tasks__completed {
+    display: flex;
+    justify-content: space-between;
+    border: 4px green solid;
+    min-height: 40px;
+    width: 620px;
+    padding: 10px;
+    margin: 5px;
+  }
+  .tasks__images {
+    width: 76px;
+  }
+}
