@@ -110,12 +110,14 @@
 
 .tasks__info {
   display: flex;
+  margin-right: 10px;
 }
 
 .tasks__text {
   word-break: break-all;
   display: inline-block;
   max-width: 480px;
+  text-align: left;
 }
 
 @media only screen and (max-width: 350px) {
